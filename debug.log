@@ -1,0 +1,6 @@
+[0205/110830:ERROR:file_io_win.cc(163)] CreateFile C:\Program Files (x86)\Junemike\Reports\Dump\settings.dat: Accesso negato. (0x5)
+[0205/110833:ERROR:registration_protocol_win.cc(82)] TransactNamedPipe: Pipe terminata. (0x6D)
+[0205/110833:ERROR:file_io_win.cc(163)] CreateFile C:\Program Files (x86)\Junemike\Reports\Dump\settings.dat: Accesso negato. (0x5)
+[0207/132000:ERROR:file_io_win.cc(163)] CreateFile C:\Program Files (x86)\Junemike\Reports\Dump\settings.dat: Accesso negato. (0x5)
+[0207/132000:ERROR:registration_protocol_win.cc(82)] TransactNamedPipe: Pipe terminata. (0x6D)
+[0207/132000:ERROR:file_io_win.cc(163)] CreateFile C:\Program Files (x86)\Junemike\Reports\Dump\settings.dat: Accesso negato. (0x5)

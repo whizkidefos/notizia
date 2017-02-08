@@ -1,0 +1,228 @@
+$bg-color: #30373d;
+$tb-color: #4d5861;
+$leggenda: #d3d3d3;
+$accent: #65dde0;
+$text-color: #36393c;
+$hover-color: orangered;
+
+/************Global styles*******************************/
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+}
+
+/**********Navigation***********************************/
+.top-bar {
+    background-color: $bg-color;
+    a, i, p{
+         color: white;
+         margin: 5px;
+    }
+}
+
+.menu {
+    background-color: #f8f8f8;
+    ul {
+        margin-top: 1.5rem;
+    }
+    li > a{
+        color: $text-color;
+    }
+    .is-accordion-submenu-parent > a::after {
+        border-bottom-color: $text-color;
+    }
+}
+
+.position-left {
+    background-color: #f8f8f8;
+}
+
+.breadcrumbs a {
+    color: $text-color;
+    &:first-child{
+        margin: 0 20px;
+    }
+}
+
+
+/**********Top bar***********************************/
+
+.title-bar {
+    background-color: $tb-color;
+}
+.title-bar-left > a {
+    color: white;
+    font-size: 2em;
+    font-weight: 600;
+}
+.title-bar-right > a > i {
+    background-color: white;
+    width: 28px;
+    height: 28px;
+    color: $tb-color;
+    vertical-align:middle;
+    border-radius: 100%;
+    line-height: 28px;
+    text-align: center;
+}
+
+.top-title {
+    font-weight: 700;
+}
+.brand-logo {
+    width: 4rem;
+    height: auto;
+    margin: 10px 20px;
+}
+.button.hollow {
+    color: white;
+    border: 1px solid #fefefe;
+    transition: all .5s ease-in;
+    &:hover {
+        color: $hover-color;
+        border: 1px solid $hover-color;
+    }
+}
+.button {
+    padding: 0.5em 0.6em;
+    margin: .7rem .4rem;
+}
+
+#search-text-input{
+    border-top:thin solid  #e5e5e5;
+    border-right:thin solid #e5e5e5;
+    border-bottom:0;
+    border-left:thin solid  #e5e5e5;
+    box-shadow:0px 1px 1px 1px #e5e5e5;
+    float:left;
+    height:27px;
+    margin:.7em 0 0 .5em; 
+    outline:0;
+    padding:.4em 0 .4em .6em; 
+    width:183px; 
+}
+  
+#button-holder{
+    background-color:#f1f1f1;
+    border-top:thin solid #e5e5e5;
+    box-shadow:1px 1px 1px 1px #e5e5e5;
+    cursor:pointer;
+    float:left;
+    height:27px;
+    margin:11px 0 0 0;
+    text-align:center;
+    width:50px;
+}
+  
+#button-holder img{
+    margin:4px;
+    width:20px; 
+}
+
+/**********Leggenda***********************************/
+.leggenda {
+    background-color: $leggenda;
+    text-align: center;
+    height: 30px;
+    .columns {
+        background-color: $leggenda;
+    }
+}
+.logo-cdic {
+    float: right;
+    padding: 10px;
+}
+
+/**********Contents***********************************/
+article {
+    padding: 30px;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.fa-th-large, .fa-print, .fa-reply, .fa-comments, .fa-rss {
+    margin-right: 10px;
+    cursor: pointer;
+}
+.align-right .fa-facebook, .align-right .fa-twitter, .align-right .fa-google-plus {
+    color: $text-color;
+    margin-right: 10px;
+}
+
+.torna {
+    color: $text-color;
+}
+
+.fa-star, .fa-star-o {
+    cursor: pointer;
+}
+
+/**********Leggenda***********************************/
+footer {
+    background-color: $bg-color;
+    color: white;
+    h3 {
+        border-bottom: 1px dotted white;
+        padding-top: 10px;
+    }
+    a {
+        color: $accent;
+    }
+    ul li {
+        list-style: none;
+    }
+}
+footer .fa-facebook, footer .fa-twitter, footer .fa-google-plus, footer .fa-youtube {
+        background-color: $accent;
+        width: 28px;
+        height: 28px;
+        color: $bg-color;
+        vertical-align:middle;
+        border-radius: 100%;
+        line-height: 28px;
+        text-align: center;
+}
+
+/***********************Effects*****************************************/
+a, .fa {
+    transition: all .5s;
+}
+a:hover,
+.fa:hover {
+    color: $hover-color;
+}
+
+/***********************Media Queries*****************************************/
+@media only screen and (max-width: 480px) {
+    .title-bar-left > a {
+    color: white;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+    .button.hollow {
+        font-size: x-small;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .off-canvas-content, .title-bar {
+        text-align: center;
+    }
+    
+    .title-bar-left > a {
+    color: white;
+    font-size: 1em;
+    font-weight: 500;
+}
+    .button.hollow {
+        font-size: x-small;
+    }
+}

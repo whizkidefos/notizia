@@ -1,0 +1,186 @@
+/************Global styles*******************************/
+body {
+  font-family: 'Titillium Web', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700; }
+
+/**********Navigation***********************************/
+.top-bar {
+  background-color: #30373d; }
+  .top-bar a, .top-bar i, .top-bar p {
+    color: white;
+    margin: 5px; }
+
+.menu {
+  background-color: #f8f8f8; }
+  .menu ul {
+    margin-top: 1.5rem; }
+  .menu li > a {
+    color: #36393c; }
+  .menu .is-accordion-submenu-parent > a::after {
+    border-bottom-color: #36393c; }
+
+.position-left {
+  background-color: #f8f8f8; }
+
+.breadcrumbs a {
+  color: #36393c; }
+  .breadcrumbs a:first-child {
+    margin: 0 20px; }
+
+/**********Top bar***********************************/
+.title-bar {
+  background-color: #4d5861; }
+
+.title-bar-left > a {
+  color: white;
+  font-size: 2em;
+  font-weight: 600; }
+
+.title-bar-right > a > i {
+  background-color: white;
+  width: 28px;
+  height: 28px;
+  color: #4d5861;
+  vertical-align: middle;
+  border-radius: 100%;
+  line-height: 28px;
+  text-align: center; }
+
+.top-title {
+  font-weight: 700; }
+
+.brand-logo {
+  width: 4rem;
+  height: auto;
+  margin: 10px 20px; }
+
+.button.hollow {
+  color: white;
+  border: 1px solid #fefefe;
+  transition: all .5s ease-in; }
+  .button.hollow:hover {
+    color: orangered;
+    border: 1px solid orangered; }
+
+.button {
+  padding: 0.5em 0.6em;
+  margin: .7rem .4rem; }
+
+#search-text-input {
+  border-top: thin solid  #e5e5e5;
+  border-right: thin solid #e5e5e5;
+  border-bottom: 0;
+  border-left: thin solid  #e5e5e5;
+  box-shadow: 0px 1px 1px 1px #e5e5e5;
+  float: left;
+  height: 27px;
+  margin: .7em 0 0 .5em;
+  outline: 0;
+  padding: .4em 0 .4em .6em;
+  width: 183px; }
+
+#button-holder {
+  background-color: #f1f1f1;
+  border-top: thin solid #e5e5e5;
+  box-shadow: 1px 1px 1px 1px #e5e5e5;
+  cursor: pointer;
+  float: left;
+  height: 27px;
+  margin: 11px 0 0 0;
+  text-align: center;
+  width: 50px; }
+
+#button-holder img {
+  margin: 4px;
+  width: 20px; }
+
+/**********Leggenda***********************************/
+.leggenda {
+  background-color: #d3d3d3;
+  text-align: center;
+  height: 30px; }
+  .leggenda .columns {
+    background-color: #d3d3d3; }
+
+.logo-cdic {
+  float: right;
+  padding: 10px; }
+
+/**********Contents***********************************/
+article {
+  padding: 30px; }
+
+.align-right {
+  text-align: right; }
+
+.fa-th-large, .fa-print, .fa-reply, .fa-comments, .fa-rss {
+  margin-right: 10px;
+  cursor: pointer; }
+
+.align-right .fa-facebook, .align-right .fa-twitter, .align-right .fa-google-plus {
+  color: #36393c;
+  margin-right: 10px; }
+
+.torna {
+  color: #36393c; }
+
+.fa-star, .fa-star-o {
+  cursor: pointer; }
+
+/**********Leggenda***********************************/
+footer {
+  background-color: #30373d;
+  color: white; }
+  footer h3 {
+    border-bottom: 1px dotted white;
+    padding-top: 10px; }
+  footer a {
+    color: #65dde0; }
+  footer ul li {
+    list-style: none; }
+
+footer .fa-facebook, footer .fa-twitter, footer .fa-google-plus, footer .fa-youtube {
+  background-color: #65dde0;
+  width: 28px;
+  height: 28px;
+  color: #30373d;
+  vertical-align: middle;
+  border-radius: 100%;
+  line-height: 28px;
+  text-align: center; }
+
+/***********************Effects*****************************************/
+a, .fa {
+  transition: all .5s; }
+
+a:hover,
+.fa:hover {
+  color: orangered; }
+
+/***********************Media Queries*****************************************/
+@media only screen and (max-width: 480px) {
+  .title-bar-left > a {
+    color: white;
+    font-size: 1.5em;
+    font-weight: 500; }
+
+  .button.hollow {
+    font-size: x-small; } }
+@media only screen and (max-width: 380px) {
+  .off-canvas-content, .title-bar {
+    text-align: center; }
+
+  .title-bar-left > a {
+    color: white;
+    font-size: 1em;
+    font-weight: 500; }
+
+  .button.hollow {
+    font-size: x-small; } }
+
+/*# sourceMappingURL=app.css.map */
